@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Test</title>
+</head>
+<body>
+    <h1>File Upload Test</h1>
+
+    <h2>Extension Whitelist Check</h2>
+    <form action="upload_extension.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_extension" />
+        <input type="submit" value="Upload (Extension)" />
+    </form>
+
+    <h2>Content Type Check</h2>
+    <form action="upload_content_type.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_content_type" />
+        <input type="submit" value="Upload (Content Type)" />
+    </form>
+
+    <h2>Magic Byte Check</h2>
+    <form action="upload_magic_byte.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="file_magic_byte" />
+        <input type="submit" value="Upload (Magic Byte)" />
+    </form>
+</body>
+</html>
